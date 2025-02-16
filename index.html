@@ -1,43 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artboard</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Sedgwick+Ave&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-    <header>
-        <a class="logo" href="">Golden</a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-list-item"><a class="nav-list-link" href="">Home</a></li>
-                <li class="nav-list-item"><a class="nav-list-link" href="">Services</a></li>
-                <li class="nav-list-item"><a class="nav-list-link" href="">Portfolio</a></li>
-                <li class="nav-list-item"><a class="nav-list-link" href="">About</a></li>
-                <li class="nav-list-item"><a class="nav-list-link" href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1 class="services">SERVICES</h1>
-    <ul class="info">
-        <li class="info-item"><h1 class="info-link">E-Commerce</h1>
-        <p class="proin">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p></li>
-        <li class="info-item"><h1 class="info-link">Responsive Web</h1>
-        <p class="proin">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p></li>
-        <li class="info-item"><h1 class="info-link">Web Security</h1>
-        <p class="proin">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p></li>
-    </ul>
-    <form class="form" action="">
-        <h1 class="contact">CONTACT US</h1>
-        <div class="box">
-            <div class="input">
-            <input class="your" placeholder="Your Name *">
-            <input class="your" placeholder="Your Email *">
-            <input class="your" placeholder="subject">
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="header-logo">Golden</a>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="heades-item"><a href="" class="header-link">Home</a></li>
+                    <li class="heades-item">
+                        <a href="" class="header-link">Services</a>
+                    </li>
+                    <li class="heades-item">
+                        <a href="" class="header-link">Portfolio</a>
+                    </li>
+                    <li class="heades-item">
+                        <a href="" class="header-link">About</a>
+                    </li>
+                    <li class="heades-item">
+                        <a href="" class="header-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <input class="message" placeholder="Your message *"></div>
-        <button class="section-hero-btn">SEND MESSAGE</button>
-    </form>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Services</h1>
+                <ul class="hero-list">
+                    <li class="hero-item">
+                        <a href="" class="hero-link">
+                            <img class="hero-icon" src="./logo1.png" alt="">
+                        </a>
+                        <h2 class="hero-caption">E-Commerce</h2>
+                        <p class="hero-text">
+                            Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean rhoncus posuere odio in
+                            tincidunt.
+                        </p>
+                    </li>
+                    <li class="hero-item">
+                        <a href="" class="hero-link">
+                            <img class="hero-icon" src="./logo2.png" alt="">
+                        </a>
+                        <h2 class="hero-caption">Responsive Web</h2>
+                        <p class="hero-text">
+                            Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean rhoncus posuere odio in
+                            tincidunt.
+                        </p>
+                    </li>
+                    <li class="hero-item">
+                        <a href="" class="hero-link">
+                            <img class="hero-icon" src="./logo3.png" alt="">
+                        </a>
+                        <h2 class="hero-caption">Web Security</h2>
+                        <p class="hero-text">
+                            Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean rhoncus posuere odio in
+                            tincidunt.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-title">Contact us</h2>
+            <form class="form">
+                <div class="form-wrap">
+                    <div class="form-box">
+                        <div class="form-list">
+                            <div class="input-box">
+                                <input type="text" class="form-input" placeholder="your Name *" />
+                                <svg class="icon-input">
+                                    <use href="./img/symbol-defs.svg#icon-comp"></use>
+                                </svg>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" class="form-input" placeholder="your e-mail *" />
+                                <svg class="icon-input">
+                                    <use href="./img/symbol-defs.svg#icon-comp"></use>
+                                </svg>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" class="form-input" placeholder="subject" />
+                                <svg class="icon-input">
+                                    <use href="./img/symbol-defs.svg#icon-comp"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea name="" id="" placeholder="Your message *" class="form-text"></textarea>
+                </div>
+                <button type="submit" class="form-btn">Send Message</button>
+            </form>
+        </div>
+    </footer>
 </body>
+
 </html>
